@@ -9,153 +9,156 @@
     <link rel="stylesheet" href="css/metisMenu.css">
     <link rel="stylesheet" href="css/custom-sidebar.css">
     <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="http://openlayers.org/en/v3.14.0/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="http://openlayers.org/en/v3.10.1/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="css/map.css">
 
 </head>
 <body>
     <div id="wrapper">
-            <nav id="header" class="navbar navbar-inverse navbar-static-top"  role="navigation" style="margin-bottom: 0">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">SISTEMA DE INFORMACION GEOGRAFICA - [PLANTILLA WEB SIG]</a>
-                </div><!--navbar-header-->
-                <ul id="header-navbar-right" class="nav navbar-nav navbar-top-links navbar-right">
-                    <li><a class="btn btn-link" title="Iniciar sesion" href="#">
-                            <i class="fa fa-sign-in"></i>&nbsp; Ingresar</a>
-                    </li>
-                    <li><a title="Crear cuenta de usuario" href="#">
-                            <i class="fa fa-user-plus"></i>&nbsp; Registrarse</a>
-                    </li>
-                </ul><!--navbar  right-->
-
-                <div id="side-bar" class="navbar-default sidebar" role="navigation">
-                    <div id="separador"></div>
-                    <div  class=" sidebar-nav navbar-collapse">
-                        <ul class="nav" id="side-menu">
-                            <li>
-                                <a href="#"><i class="fa fa-home"></i> &nbsp;&nbsp;Inicio</a> 
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-dot-circle-o"></i>&nbsp;&nbsp;Nombre del Mapa 1<span class="fa arrow"></span></a> 
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="../index.html"><i class="fa fa-file-text-o"></i>&nbsp;&nbsp; Descripcion</a> 
-                                    </li>
-                                    <li>
-                                        <a href="../index.html"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Ver Mapa</a> 
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-dot-circle-o"></i>&nbsp;&nbsp;Nombre del Mapa 2<span class="fa arrow"></span></a> 
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="../index.html"><i class="fa fa-file-text-o"></i> &nbsp;&nbsp;Descripcion</a> 
-                                    </li>
-                                    <li>
-                                        <a href="../index.html"><i class="fa fa-map-marker"></i> &nbsp;&nbsp;Ver Mapa</a> 
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-dot-circle-o"></i>&nbsp;&nbsp; Nombre del Mapa 3<span class="fa arrow"></span></a> 
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="../index.html"><i class="fa fa-file-text-o"></i>&nbsp;&nbsp; Descripcion</a> 
-                                    </li>
-                                    <li>
-                                        <a href="../index.html"><i class="fa fa-map-marker"></i>&nbsp;&nbsp; Ver Mapa</a> 
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-dot-circle-o"></i>&nbsp;&nbsp;Nombre del Mapa 4<span class="fa arrow"></span></a> 
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="../index.html"><i class="fa fa-file-text-o"></i> &nbsp;&nbsp;Descripcion</a> 
-                                    </li>
-                                    <li>
-                                        <a href="../index.html"><i class="fa fa-map-marker"></i> &nbsp;&nbsp;Ver Mapa</a> 
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-dot-circle-o"></i>&nbsp;&nbsp;Nombre del Mapa 5<span class="fa arrow"></span></a> 
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="../index.html"><i class="fa fa-file-text-o"></i>&nbsp;&nbsp; Descripcion</a> 
-                                    </li>
-                                    <li>
-                                        <a href="../index.html"><i class="fa fa-map-marker"></i> &nbsp;&nbsp;Ver Mapa</a> 
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-dot-circle-o"></i>&nbsp;&nbsp;Nombre del Mapa 6<span class="fa arrow"></span></a> 
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="../index.html"><i class="fa fa-file-text-o"></i> &nbsp;&nbsp;Descripcion</a> 
-                                    </li>
-                                    <li>
-                                        <a href="../index.html"><i class="fa fa-map-marker"></i> &nbsp;&nbsp;Ver Mapa</a> 
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-dot-circle-o"></i>&nbsp;&nbsp;Nombre del Mapa 7<span class="fa arrow"></span></a> 
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="../index.html"><i class="fa fa-file-text-o"></i> &nbsp;&nbsp;Descripcion</a> 
-                                    </li>
-                                    <li>
-                                        <a href="../index.html"><i class="fa fa-map-marker"></i> Ver Mapa</a> 
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div><!--sidebar-nav collapse-->
-                </div><!--navbar sidebar-->
-            
-            </nav>
-        <div id="page-wrapper">
-            <div id="map" class="map"></div>    
-        </div>
+        <nav id="header" class="navbar navbar-inverse navbar-static-top"  role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">SISTEMA DE INFORMACION GEOGRAFICA - [PLANTILLA WEB SIG]</a>
+            </div><!--navbar-header-->
+            <ul id="header-navbar-right" class="nav navbar-nav navbar-top-links navbar-right">
+                <li>
+                    <a class="btn btn-link" title="Iniciar sesion" href="#">
+                        <i class="fa fa-sign-in"></i>&nbsp; Ingresar
+                    </a>
+                </li>
+                <li>
+                    <a title="Crear cuenta de usuario" href="#">
+                        <i class="fa fa-user-plus"></i>&nbsp; Registrarse
+                    </a>
+                </li>
+            </ul><!--navbar  right-->
+        </nav>
     </div>
-    
-        <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/angular.min.js"></script>
-        <script src="js/metisMenu.js"></script>
-        <script src="js/sidebar.js"></script>
-        <script src="http://openlayers.org/en/v3.14.0/build/ol.js"></script>
-        <script>
-            var url = 'http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/' +
-                'Specialty/ESRI_StateCityHighway_USA/MapServer';
+    <div id="side-bar" class="navbar-default sidebar" role="navigation">
+        <div id="separador"></div>
+        <div  class=" sidebar-nav navbar-collapse">
+            <ul class="nav" id="side-menu">
+                <li>
+                    <a href="#"><i class="fa fa-home"></i> &nbsp;&nbsp;Inicio</a> 
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-dot-circle-o"></i>&nbsp;&nbsp;Nombre del Mapa 1<span class="fa arrow"></span></a> 
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="../index.html"><i class="fa fa-file-text-o"></i>&nbsp;&nbsp; Descripcion</a> 
+                        </li>
+                        <li>
+                            <a href="../index.html"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Ver Mapa</a> 
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-dot-circle-o"></i>&nbsp;&nbsp;Nombre del Mapa 2<span class="fa arrow"></span></a> 
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="../index.html"><i class="fa fa-file-text-o"></i> &nbsp;&nbsp;Descripcion</a> 
+                        </li>
+                        <li>
+                            <a href="../index.html"><i class="fa fa-map-marker"></i> &nbsp;&nbsp;Ver Mapa</a> 
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-dot-circle-o"></i>&nbsp;&nbsp; Nombre del Mapa 3<span class="fa arrow"></span></a> 
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="../index.html"><i class="fa fa-file-text-o"></i>&nbsp;&nbsp; Descripcion</a> 
+                        </li>
+                        <li>
+                            <a href="../index.html"><i class="fa fa-map-marker"></i>&nbsp;&nbsp; Ver Mapa</a> 
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-dot-circle-o"></i>&nbsp;&nbsp;Nombre del Mapa 4<span class="fa arrow"></span></a> 
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="../index.html"><i class="fa fa-file-text-o"></i> &nbsp;&nbsp;Descripcion</a> 
+                        </li>
+                        <li>
+                            <a href="../index.html"><i class="fa fa-map-marker"></i> &nbsp;&nbsp;Ver Mapa</a> 
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-dot-circle-o"></i>&nbsp;&nbsp;Nombre del Mapa 5<span class="fa arrow"></span></a> 
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="../index.html"><i class="fa fa-file-text-o"></i>&nbsp;&nbsp; Descripcion</a> 
+                        </li>
+                        <li>
+                            <a href="../index.html"><i class="fa fa-map-marker"></i> &nbsp;&nbsp;Ver Mapa</a> 
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-dot-circle-o"></i>&nbsp;&nbsp;Nombre del Mapa 6<span class="fa arrow"></span></a> 
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="../index.html"><i class="fa fa-file-text-o"></i> &nbsp;&nbsp;Descripcion</a> 
+                        </li>
+                        <li>
+                            <a href="../index.html"><i class="fa fa-map-marker"></i> &nbsp;&nbsp;Ver Mapa</a> 
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-dot-circle-o"></i>&nbsp;&nbsp;Nombre del Mapa 7<span class="fa arrow"></span></a> 
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="../index.html"><i class="fa fa-file-text-o"></i> &nbsp;&nbsp;Descripcion</a> 
+                        </li>
+                        <li>
+                            <a href="../index.html"><i class="fa fa-map-marker"></i> Ver Mapa</a> 
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!--sidebar-nav collapse-->
+    </div>
+    <div id="map-container">
+        <div id="map" class="map"></div>
+    </div>  
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/metisMenu.js"></script>
 
-            var layers = [
-              new ol.layer.Tile({
-                source: new ol.source.MapQuest({layer: 'sat'})
-              }),
-              new ol.layer.Tile({
-                extent: [-13884991, 2870341, -7455066, 6338219],
-                source: new ol.source.TileArcGISRest({
-                  url: url
-                })
-              })
-            ];
-            var map = new ol.Map({
-              layers: layers,
-              target: 'map',
-              view: new ol.View({
-                center: [-10997148, 4569099],
-                zoom: 4
-              })
-            });
+    <script src="http://openlayers.org/en/v3.10.1/build/ol.js"></script>
+    <script>
+        var url = 'http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/' +
+            'Specialty/ESRI_StateCityHighway_USA/MapServer';
+
+        var layers = [
+          new ol.layer.Tile({
+            source: new ol.source.MapQuest({layer: 'sat'})
+          }),
+          new ol.layer.Tile({
+            extent: [-13884991, 2870341, -7455066, 6338219],
+            source: new ol.source.TileArcGISRest({
+              url: url
+            })
+          })
+        ];
+        var map = new ol.Map({
+          layers: layers,
+          target: 'map',
+          view: new ol.View({
+            center: [-10997148, 4569099],
+            zoom: 4
+          })
+        });
     </script>
         
 </body>
