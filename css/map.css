@@ -12,9 +12,12 @@ and open the template in the editor.
     position: absolute;
     left:250px;
     right:0px;
-    height:94%;
-    border-bottom: 1px solid #e7e7e7;
+    top:50px;
+    /*/height:94%;*/
+    bottom: 20px;
+    /*border-bottom: 0px solid #e7e7e7;*/
     border-left: 1px solid #e7e7e7;
+    background-color: #fff;
 }
 
 .map {
@@ -22,5 +25,14 @@ and open the template in the editor.
   width: 100%;
   /*background: url(map-background.jpg) repeat;*/
   margin-bottom: 0px;
+}
+
+#footer{
+    background-image: linear-gradient(to bottom,#41ae76 0,#238b45 80%);
+    position: absolute;
+    bottom: 0px;
+    left:251px;
+    right: 0px;
+    height:20px;
 }
 
